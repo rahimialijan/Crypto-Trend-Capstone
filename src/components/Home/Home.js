@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
-import Stats from "../Stats/Stats";
 import Coin from "../Coin/Coin";
 import "./home.css";
 
@@ -56,7 +55,46 @@ const Home = () => {
       ) : (
         <div>
           <div className="all-stats-container">ALL STATS</div>
-          <Stats stats={stats} />
+          <div className="statsContainer">
+            <div className="statsSection">
+              <div className="stats">
+                <div className="leftStats">
+                  <span>
+                    <span>Total Coins:</span>{" "}
+                    {Number(stats.total).toLocaleString(undefined, 2)}
+                  </span>
+                  <span>
+                    <span>Total Volume in 24h:</span>{" "}
+                    {`${Number(stats.total24hVolume).toLocaleString(
+                      undefined,
+                      2
+                    )}$`}
+                  </span>
+                  <span>
+                    <span>Total Exchanges:</span>{" "}
+                    {Number(stats.totalExchanges).toLocaleString(undefined, 2)}
+                  </span>
+                </div>
+                <div className="rightStats">
+                  <span>
+                    <span>Total Coins:</span>{" "}
+                    {Number(stats.totalCoins).toLocaleString(undefined, 2)}
+                  </span>
+                  <span>
+                    <span>Total Markets:</span>{" "}
+                    {Number(stats.totalMarkets).toLocaleString(undefined, 2)}
+                  </span>
+                  <span>
+                    <span>Total Markets Cap:</span>{" "}
+                    {`${Number(stats.totalMarketCap).toLocaleString(
+                      undefined,
+                      2
+                    )}$`}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="search-form-container">
             <input
               className="search-input"
