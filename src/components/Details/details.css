@@ -1,0 +1,55 @@
+.details-top-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3%;
+}
+
+.details-crypto-icon img {
+  width: 4rem;
+}
+
+.details-crypto-intro {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.details-crypto-analytics {
+  display: flex;
+  padding: 2% 3%;
+  flex-wrap: wrap;
+}
+
+.details-crypto-analytics > div {
+  width: 44%;
+  padding: 2%;
+  background-color: #5e82ae;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.details-crypto-analytics > div:nth-child(4n),
+.details-crypto-analytics > div:nth-child(4n + 1) {
+  background-color: #809ec4;
+}
+
+@media only screen and (max-width: 600px) {
+  .details-crypto-analytics {
+    font-size: 10px;
+    flex-direction: column;
+  }
+
+  .details-crypto-analytics > div {
+    width: 95%;
+    padding: 5% 3%;
+  }
+
+  .details-crypto-analytics > div:nth-child(even) {
+    background-color: #d14378;
+  }
+
+  .details-crypto-analytics > div:nth-child(odd) {
+    background-color: #dd4781;
+  }
+}

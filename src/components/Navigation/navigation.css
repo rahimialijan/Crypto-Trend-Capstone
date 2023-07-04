@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background: #5682b8;
+}
+
+.nav span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.back-button {
+  width: 30px;
+}
+
+.nav-icon {
+  padding-right: 1rem;
+}
+
+.nav-icon img {
+  height: 1.2rem;
+}

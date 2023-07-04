@@ -1,0 +1,37 @@
+.stats-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.letf-stats,
+.right-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.letf-stats > span,
+.right-stats > span {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .letf-stats {
+    display: none;
+  }
+
+  .stats-section {
+    padding-top: 3%;
+  }
+
+  .right-stats > span {
+    justify-content: space-between;
+  }
+}
