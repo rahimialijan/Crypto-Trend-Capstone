@@ -17,7 +17,7 @@ CoinsList.propTypes = {
 };
 
 const Error = ({ error }) => (
-  <div className="error-container">
+  <div className="error-container" data-testid="error-container">
     <span>{error}</span>
   </div>
 );
@@ -27,10 +27,11 @@ Error.propTypes = {
 };
 
 const Loading = () => (
-  <div className="loading-container">
+  <div className="loading-container" data-testid="loading-container">
     <span />
   </div>
 );
+
 const Home = () => {
   const {
     cryptos, stats, isLoading, error,
@@ -48,7 +49,7 @@ const Home = () => {
   });
 
   return (
-    <div className="content-container">
+    <div className="content-container" data-testid="home-component">
       {/* eslint-disable-next-line no-nested-ternary */}
       {error !== '' ? (
         <Error error={error} />
