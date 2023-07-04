@@ -1,5 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
-import cryptoReducer from "./crypto/cryptoSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import cryptoReducer from './crypto/cryptoSlice';
+
 const REDUX_DEVTOOLS = true;
 
 const store = configureStore({

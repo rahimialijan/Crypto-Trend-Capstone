@@ -20,9 +20,11 @@
   }
 }
 
- .coin-name-value, .coin-price-value{
+.coin-name-value,
+.coin-price-value {
   margin-left: 100px;
 }
-.coin-market-cap-value{
+
+.coin-market-cap-value {
   margin-left: 52px;
 }

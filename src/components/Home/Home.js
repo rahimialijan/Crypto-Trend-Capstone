@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { useSelector } from "react-redux";
-import PropTypes from "prop-types";
-import Coin from "../Coin/Coin";
-import "./home.css";
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
+import Coin from '../Coin/Coin';
+import './home.css';
 
 const CoinsList = ({ coins }) => {
   const coinItems = coins.map((coin) => (
@@ -31,13 +31,14 @@ const Loading = () => (
     <span />
   </div>
 );
-
 const Home = () => {
-  const { cryptos, stats, isLoading, error } = useSelector(
-    (state) => state.crypto
+  const {
+    cryptos, stats, isLoading, error,
+  } = useSelector(
+    (state) => state.crypto,
   );
 
-  const [searchCoin, setSearchCoin] = useState("");
+  const [searchCoin, setSearchCoin] = useState('');
 
   const coinSearch = cryptos.filter((el) => {
     if (searchCoin.length > 0) {
@@ -48,7 +49,8 @@ const Home = () => {
 
   return (
     <div className="content-container">
-      {error !== "" ? (
+      {/* eslint-disable-next-line no-nested-ternary */}
+      {error !== '' ? (
         <Error error={error} />
       ) : isLoading ? (
         <Loading />
@@ -60,35 +62,41 @@ const Home = () => {
               <div className="stats">
                 <div className="leftStats">
                   <span>
-                    <span>Total Coins:</span>{" "}
+                    <span>Total Coins:</span>
+                    {' '}
                     {Number(stats.total).toLocaleString(undefined, 2)}
                   </span>
                   <span>
-                    <span>Total Volume in 24h:</span>{" "}
+                    <span>Total Volume in 24h:</span>
+                    {' '}
                     {`${Number(stats.total24hVolume).toLocaleString(
                       undefined,
-                      2
+                      2,
                     )}$`}
                   </span>
                   <span>
-                    <span>Total Exchanges:</span>{" "}
+                    <span>Total Exchanges:</span>
+                    {' '}
                     {Number(stats.totalExchanges).toLocaleString(undefined, 2)}
                   </span>
                 </div>
                 <div className="rightStats">
                   <span>
-                    <span>Total Coins:</span>{" "}
+                    <span>Total Coins:</span>
+                    {' '}
                     {Number(stats.totalCoins).toLocaleString(undefined, 2)}
                   </span>
                   <span>
-                    <span>Total Markets:</span>{" "}
+                    <span>Total Markets:</span>
+                    {' '}
                     {Number(stats.totalMarkets).toLocaleString(undefined, 2)}
                   </span>
                   <span>
-                    <span>Total Markets Cap:</span>{" "}
+                    <span>Total Markets Cap:</span>
+                    {' '}
                     {`${Number(stats.totalMarketCap).toLocaleString(
                       undefined,
-                      2
+                      2,
                     )}$`}
                   </span>
                 </div>

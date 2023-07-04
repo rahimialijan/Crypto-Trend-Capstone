@@ -1,13 +1,13 @@
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import "./coin.css";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './coin.css';
 
 const Coin = ({ coin }) => {
   const style = {
     backgroundImage: `url(${coin.iconUrl})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPositionX: "right",
-    backgroundSize: "50px",
+    backgroundRepeat: 'no-repeat',
+    backgroundPositionX: 'right',
+    backgroundSize: '50px',
   };
   return (
     <li key={coin.uuid}>

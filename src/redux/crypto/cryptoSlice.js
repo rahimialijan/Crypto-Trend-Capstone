@@ -1,19 +1,19 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const API_URL = "https://api.coinranking.com/v2/coins";
-const API_TOKEN = "coinranking58b0bae7376b96b570459059c0b915bf56ab4041782cc51c";
+const API_URL = 'https://api.coinranking.com/v2/coins';
+// const API_TOKEN = 'coinranking58b0bae7376b96b570459059c0b915bf56ab4041782cc51c';
 
 const initialState = {
   cryptos: [],
   stats: {},
-  title: "Crypto Trend",
+  title: 'Crypto Trend',
   isLoading: true,
-  error: "",
+  error: '',
   active: null,
 };
 
-export const fetchCrypto = createAsyncThunk("crypto/fetchCrypto", async () => {
+export const fetchCrypto = createAsyncThunk('crypto/fetchCrypto', async () => {
   try {
     const response = await axios.get(API_URL);
     return response.data.data;
@@ -23,7 +23,7 @@ export const fetchCrypto = createAsyncThunk("crypto/fetchCrypto", async () => {
 });
 
 const cryptoSlice = createSlice({
-  name: "crypto",
+  name: 'crypto',
   initialState,
   reducers: {
     setActiveCoin: (state, action) => {
@@ -33,22 +33,21 @@ const cryptoSlice = createSlice({
       state.title = action.payload;
     },
   },
-  extraReducers: (builder) =>
-    builder
-      .addCase(fetchCrypto.pending, (state) => {
-        state.isLoading = true;
-        state.error = "";
-      })
-      .addCase(fetchCrypto.fulfilled, (state, action) => {
-        state.isLoading = false;
-        state.cryptos = action.payload.coins;
-        state.stats = action.payload.stats;
-        state.error = "";
-      })
-      .addCase(fetchCrypto.rejected, (state, action) => {
-        state.isLoading = false;
-        state.error = action.error.message;
-      }),
+  extraReducers: (builder) => builder
+    .addCase(fetchCrypto.pending, (state) => {
+      state.isLoading = true;
+      state.error = '';
+    })
+    .addCase(fetchCrypto.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.cryptos = action.payload.coins;
+      state.stats = action.payload.stats;
+      state.error = '';
+    })
+    .addCase(fetchCrypto.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.error.message;
+    }),
 });
 
 export const { setTitle, setActiveCoin } = cryptoSlice.actions;

@@ -31,7 +31,6 @@
 .all-stats-container {
   background-color: #6d8eb7;
   padding: 1%;
-  font-size: 1.2rem;
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
@@ -62,7 +61,7 @@
 .search-form-container {
   display: flex;
   padding: 1rem;
-justify-content: center;
+  justify-content: center;
 }
 
 .search-input {
@@ -74,6 +73,7 @@ justify-content: center;
 input:focus-visible {
   outline-offset: 0;
 }
+
 .statsContainer {
   display: flex;
   justify-content: center;

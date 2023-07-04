@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useLocation } from "react-router";
-import { Link } from "react-router-dom";
-import { setTitle, setActiveCoin } from "../../redux/crypto/cryptoSlice";
-import "./details.css";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
+import { setTitle, setActiveCoin } from '../../redux/crypto/cryptoSlice';
+import './details.css';
 
 const Details = () => {
   const dispatch = useDispatch();
   const location = useLocation();
-  const activeData = useSelector((state) =>
-    state.crypto.cryptos.find((el) => el.uuid === location.state)
-  );
+  // eslint-disable-next-line
+  const activeData = useSelector((state) => state.crypto.cryptos.find((el) => el.uuid === location.state),);
   const date = new Date(activeData.listedAt * 1000);
 
   useEffect(() => {
@@ -50,24 +49,24 @@ const Details = () => {
         </div>
         <div>
           <span>Volume in 24h:</span>
-          <span>{`${Number(activeData["24hVolume"]).toLocaleString(
-            undefined,
-            2
-          )} $`}</span>
+          <span>
+            {`${Number(activeData['24hVolume']).toLocaleString(
+              undefined,
+              2,
+            )} $`}
+          </span>
         </div>
         <div>
           <span>Market Capital:</span>
-          <span>{`${Number(activeData.marketCap).toLocaleString(
-            undefined,
-            2
-          )} $`}</span>
+          <span>
+            {`${Number(activeData.marketCap).toLocaleString(undefined, 2)} $`}
+          </span>
         </div>
         <div>
           <span>Price in USD: </span>
-          <span>{`${Number(activeData.price).toLocaleString(
-            undefined,
-            2
-          )} $`}</span>
+          <span>
+            {`${Number(activeData.price).toLocaleString(undefined, 2)} $`}
+          </span>
         </div>
         <div>
           <span>Listed At:</span>
