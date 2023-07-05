@@ -60,6 +60,7 @@ API Yelp fuction
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://thriving-halva-0d9d98.netlify.app/)
+  [Video Presentation](https://www.loom.com/share/5159ab2899ce41dfa281f8e9565eaa61?sid=25e205fb-a91d-4eb7-b9e6-aa02cdffc0cc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
