@@ -1,0 +1,159 @@
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.content-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.crypto-list li {
+  min-width: 48%;
+  background-color: #5e82ae;
+  padding: 1%;
+}
+
+.crypto-list li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.crypto-list li:nth-child(4n),
+.crypto-list li:nth-child(4n + 1) {
+  background-color: #809ec4;
+}
+
+.all-stats-container {
+  background-color: #6d8eb7;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  align-items: center;
+}
+
+.loading-container > span {
+  content: url('../../assets/images/loading.svg');
+  height: 9rem;
+  width: max-content;
+  animation: rotate 1s infinite;
+}
+
+.error-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 5%;
+}
+
+.search-form-container {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.search-input {
+  border: 0;
+  padding: 0.5rem;
+  width: 30%;
+}
+
+input:focus-visible {
+  outline-offset: 0;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.statsSection {
+  display: flex;
+  gap: 2rem;
+}
+
+.leftStats,
+.rightStats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.leftStats > span,
+.rightStats > span {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .leftStats {
+    display: none;
+  }
+
+  .statsContainer {
+    padding-top: 3%;
+  }
+
+  .rightStats > span {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search-input {
+    padding: 0.2rem;
+  }
+
+  .crypto-list {
+    margin-top: 0;
+  }
+
+  .crypto-list li {
+    min-width: 90%;
+    background-color: #5e82ae;
+    padding: 2% 1%;
+    font-size: 1rem;
+  }
+
+  .crypto-list li:nth-child(odd) {
+    background-color: #5e82ae;
+  }
+
+  .crypto-list li:nth-child(even) {
+    background-color: #809ec4;
+  }
+
+  .content-container ul {
+    padding-inline-start: 0;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .letf-stats > span,
+  .right-stats > span {
+    flex-wrap: wrap;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

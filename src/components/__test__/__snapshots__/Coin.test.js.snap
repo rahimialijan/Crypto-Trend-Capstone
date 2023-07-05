@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Should Render Coin Component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <li>
+        <a
+          href="/details?coin=111"
+        >
+          <div
+            class="coin-container"
+          >
+            <span
+              style="background-image: url(); background-repeat: no-repeat; background-position-x: right; background-size: 50px;"
+            >
+              <span
+                class="coin-info coin-name"
+              >
+                <span
+                  class="coin-name-label"
+                >
+                  Name: 
+                </span>
+                <span
+                  class="coin-name-value"
+                >
+                  BTC()
+                </span>
+              </span>
+              <span
+                class="coin-info coin-market-cap"
+              >
+                <span
+                  class="coin-market-cap-label"
+                >
+                  Market Cap: 
+                </span>
+                <span
+                  class="coin-market-cap-value"
+                >
+                  100
+                </span>
+              </span>
+              <span
+                class="coin-info coin-price"
+              >
+                <span
+                  class="coin-price-label"
+                >
+                  Price: 
+                </span>
+                <span
+                  class="coin-price-value"
+                >
+                  1,000
+                </span>
+              </span>
+            </span>
+          </div>
+        </a>
+      </li>
+    </div>
+  </body>,
+  "container": <div>
+    <li>
+      <a
+        href="/details?coin=111"
+      >
+        <div
+          class="coin-container"
+        >
+          <span
+            style="background-image: url(); background-repeat: no-repeat; background-position-x: right; background-size: 50px;"
+          >
+            <span
+              class="coin-info coin-name"
+            >
+              <span
+                class="coin-name-label"
+              >
+                Name: 
+              </span>
+              <span
+                class="coin-name-value"
+              >
+                BTC()
+              </span>
+            </span>
+            <span
+              class="coin-info coin-market-cap"
+            >
+              <span
+                class="coin-market-cap-label"
+              >
+                Market Cap: 
+              </span>
+              <span
+                class="coin-market-cap-value"
+              >
+                100
+              </span>
+            </span>
+            <span
+              class="coin-info coin-price"
+            >
+              <span
+                class="coin-price-label"
+              >
+                Price: 
+              </span>
+              <span
+                class="coin-price-value"
+              >
+                1,000
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </li>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

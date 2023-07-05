@@ -24,15 +24,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Micro Biz Finder] <a name="about-project"></a>
+# 📖 [Crypto Trend] <a name="about-project"></a>
 
 **[Description]**
 
-The application was created with React and Redux, using the Yelp fuction API.
-
-Develop the application for a geolocated micro directory, where tourists and residents can easily search for services and entertainment in the city of Montreal, QC, Canada.
-
-The application is designed so that you can easily create local directories for other cities, changing only a few fragments of the code.
+The application was created with React and Redux, using the coinranking API.
+[Crypto Trend] is the ultimate online platform for crypto trends, built with HTML, CSS, React, and Redux. Stay ahead of the curve, explore new opportunities, and make informed decisions in the exciting world of cryptocurrencies
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,13 +59,8 @@ API Yelp fuction
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Video Presentation <a name="video"></a>
-
-- [Video Presentation]()
+- [Live Demo Link](https://thriving-halva-0d9d98.netlify.app/)
+  [Video Presentation](https://www.loom.com/share/5159ab2899ce41dfa281f8e9565eaa61?sid=25e205fb-a91d-4eb7-b9e6-aa02cdffc0cc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +136,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Marco Díaz**
+👤 **Alijan Rahimi**
 
 - GitHub: [@Alijan-Rahimi](https://github.com/rahimialijan)
 - Twitter: [@AlijanRahimi10](https://twitter.com/AlijanRahimi10)

@@ -1,0 +1,23 @@
+.not-found {
+  color: brown;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.category-secion {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif, "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.engineer-emoji {
+  line-height: 6rem;
+  font-size: 6rem;
+}
